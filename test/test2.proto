@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+package something.else;
+
+option go_package = ".;something_else";
+message Baz {}

@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package prototmpl.test;
+
+option go_package = ".;prototmpl_test";
+
+message Foo {
+  int32 one = 1;
+  string two = 2;
+}
+
+message Bar {
+  Foo foo = 1;
+}
